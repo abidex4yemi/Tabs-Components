@@ -13,7 +13,6 @@ class TabLink {
 		// Add a click event listener on this instance, calling the select method on click
 
 		this.element.addEventListener('click', () => {
-			this.tabItem.select();
 			this.select();
 		});
 	}
@@ -28,6 +27,7 @@ class TabLink {
 		// Add a class named "tabs-link-selected" to this link
 		this.element.classList.add('tabs-link-selected');
 		// Call the select method on the item associated with this link
+		this.tabItem.select();
 	}
 }
 
